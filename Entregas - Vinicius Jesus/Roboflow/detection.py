@@ -47,7 +47,7 @@ while True:
         text = f"{label} {conf:.2f}"
         cv2.putText(frame, text, (x1, y1 - 10), font, font_scale, box_color, font_thickness, lineType=cv2.LINE_AA)
 
-    cv2.imshow("Detecção YOLO - Pressione ESC para sair", frame)
+    cv2.imshow("Deteccao YOLO", frame)
 
     if out:
         out.write(frame)
@@ -59,3 +59,4 @@ cap.release()
 if out:
     out.release()
 cv2.destroyAllWindows()
+
